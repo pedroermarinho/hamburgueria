@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-HamburgueriaApplication<hamburgueria>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "io.github.pedroermarinho.hamburgueria.HamburgueriaApplication",
+            "projectName": "hamburgueria",
+            "args": ""
+        }
+    ]
+}
