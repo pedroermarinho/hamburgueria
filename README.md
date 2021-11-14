@@ -30,3 +30,5 @@ yarn install
 ``` bash
 yarn serve --port 8081
 ```
+### Informaçãoes sobre as etapas do projeto
+[Tarefas](https://github.com/pedroermarinho/hamburgueria/projects/1?fullscreen=true)
