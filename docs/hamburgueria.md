@@ -27,6 +27,8 @@
 ```json
 {
     "nome":"Teste",
+    "descricao":"teste",
+    "preco": 2.0,
     "categoriaID":1
 }
 ```
@@ -147,6 +149,7 @@
 {
     "nome":"teste",
     "email":"teste@gmail.com",
+    "telefone": "99 999999999",
     "senha":"123"
 }
 ```
@@ -218,7 +221,7 @@
 
 |Param|value|Type|
 |---|---|---|
-|token|eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1AZ21haWwuY29tIiwiZXhwIjoxNjM2OTIzMjY1fQ.I3QEp24LdvvOxqCAna7X1LE9CAnqHM1YOW6WYcj5pzGiB3S4J9g1OoMpzpB_k2UNFLoNdUDZshUNxzq-PYdbYQ|string|
+|token|eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1AZ21haWwuY29tIiwiZXhwIjoxNjM3MDExMDM4fQ.thg3Oo-A7zFJIlHQhh8wvXsaaFTcfNjWvnxXJV-mMwnP3hgGppx9yDa-CqjbHGS8mi7sOAhcuIQPtoYYrnL4Fw|string|
 
 
 

@@ -55,7 +55,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\":\"Teste\",\n    \"categoriaID\":1\n}",
+							"raw": "{\n    \"nome\":\"Teste\",\n    \"descricao\":\"teste\",\n    \"preco\": 2.0,\n    \"categoriaID\":1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -276,7 +276,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"nome\":\"teste\",\n    \"email\":\"teste@gmail.com\",\n    \"senha\":\"123\"\n}",
+							"raw": "{\n    \"nome\":\"teste\",\n    \"email\":\"teste@gmail.com\",\n    \"telefone\": \"99 999999999\",\n    \"senha\":\"123\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -408,7 +408,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1AZ21haWwuY29tIiwiZXhwIjoxNjM2OTIzMjY1fQ.I3QEp24LdvvOxqCAna7X1LE9CAnqHM1YOW6WYcj5pzGiB3S4J9g1OoMpzpB_k2UNFLoNdUDZshUNxzq-PYdbYQ",
+									"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1AZ21haWwuY29tIiwiZXhwIjoxNjM3MDExMDM4fQ.thg3Oo-A7zFJIlHQhh8wvXsaaFTcfNjWvnxXJV-mMwnP3hgGppx9yDa-CqjbHGS8mi7sOAhcuIQPtoYYrnL4Fw",
 									"type": "string"
 								}
 							]
