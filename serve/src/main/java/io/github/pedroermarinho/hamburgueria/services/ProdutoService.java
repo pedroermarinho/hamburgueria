@@ -79,7 +79,7 @@ public class ProdutoService {
 		final Categoria categoria = categoriaService.find(objDTO.getCategoriaID());
 		
 		
-		return new Produto(objDTO.getId(), objDTO.getNome(),categoria);
+		return new Produto(objDTO.getId(), objDTO.getNome(),objDTO.getDescricao(),objDTO.getPreco(), categoria);
 		
 		
 	}

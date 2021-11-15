@@ -28,22 +28,25 @@ public class Produto  implements Serializable{
 	private Integer id;
 
 	private String nome;
-	
+	private String descricao;
+	private double preco;
 	
 	@ManyToOne
 	@JoinColumn(name="categoria_id")
 	private Categoria categoria; 
 
 	@JsonIgnore
-	@OneToMany(mappedBy = "produto")
+	@OneToMany(mappedBy = "usuario")
 	private List<Carrinho> carrinho = new ArrayList<>();
 	
 	
 
-	public Produto(Integer id, String nome, Categoria categoria) {
+	public Produto(Integer id, String nome,String descricao,double preco, Categoria categoria) {
 		this.id = id;
 		this.nome = nome;
 		this.categoria = categoria;
+		this.descricao =descricao;
+		this.preco= preco;
 	}
 
 	public Produto() {
@@ -75,6 +78,22 @@ public class Produto  implements Serializable{
 	public void setCategoria(Categoria categoria) {
 		this.categoria = categoria;
 	}
+	
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
 
 	@Override
 	public int hashCode() {
@@ -91,6 +110,12 @@ public class Produto  implements Serializable{
 			return false;
 		Produto other = (Produto) obj;
 		return Objects.equals(id, other.id);
+	}
+
+	@Override
+	public String toString() {
+		return "Produto [carrinho=" + carrinho + ", categoria=" + categoria + ", descricao=" + descricao + ", id=" + id
+				+ ", nome=" + nome + ", preco=" + preco + "]";
 	}
 
 	
