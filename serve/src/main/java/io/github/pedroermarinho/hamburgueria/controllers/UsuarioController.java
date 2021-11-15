@@ -16,6 +16,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import io.github.pedroermarinho.hamburgueria.config.Constants;
 import io.github.pedroermarinho.hamburgueria.domain.Usuario;
 import io.github.pedroermarinho.hamburgueria.domain.dto.CarrinhoDTO;
+import io.github.pedroermarinho.hamburgueria.domain.dto.NovoUsuarioDTO;
 import io.github.pedroermarinho.hamburgueria.services.UsuarioService;
 import io.github.pedroermarinho.hamburgueria.services.UserService;
 
@@ -42,7 +43,8 @@ public class UsuarioController {
 	
 	
 	@RequestMapping(method=RequestMethod.POST)
-	public ResponseEntity<Void> insert(@RequestBody Usuario newObj) {
+	public ResponseEntity<Void> insert(@RequestBody NovoUsuarioDTO newObj) {
+		System.out.println(newObj);
 		var obj = service.insert(newObj);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
 				.path("/{id}").buildAndExpand(obj.getId()).toUri();
