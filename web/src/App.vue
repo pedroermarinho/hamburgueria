@@ -1,28 +1,48 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app  >
+   <v-main>
+     <v-container >
+       <router-view  />
+     </v-container>
+    
+   </v-main>
+    <Footer/>
+  </v-app>
 </template>
 
+
+<style>
+.main{
+background: transparent linear-gradient(134deg, #473400 0%, #232227 21%, #232227 100%) 0% 0% no-repeat padding-box;
+}
+.container{
+     max-width: 100vw;
+     padding:0px;
+  }
+</style>
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from './view/components/Footer.vue';
+import store from './controller/store';
+
+try {
+  store.dispatch('ActionCheckToken');
+} catch (error) {
+  console.log(error);
+}
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+  components: {
+    Footer
+  },
+  data: () => ({
+    //
+  }),
+
+  methods:{
+  }
+};
+</script>

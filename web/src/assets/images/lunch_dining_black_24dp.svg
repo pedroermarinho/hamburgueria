@@ -1,0 +1,12 @@
+<svg id="lunch_dining_black_24dp" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <g id="Grupo_3" data-name="Grupo 3" transform="translate(0 0)">
+    <rect id="Retângulo_1" data-name="Retângulo 1" width="36" height="36" fill="none"/>
+  </g>
+  <g id="Grupo_5" data-name="Grupo 5" transform="translate(2.395 4.756)">
+    <g id="Grupo_4" data-name="Grupo 4">
+      <path id="Caminho_4" data-name="Caminho 4" d="M2,20.488a3.06,3.06,0,0,0,3.107,2.992H29.962a3.06,3.06,0,0,0,3.107-2.992V16H2Zm3.107-1.5H29.962v1.5H5.107Z" transform="translate(-2 3.065)" fill="#fff"/>
+      <path id="Caminho_5" data-name="Caminho 5" d="M27.875,11.5c-3.029,0-3.247,1.5-5.173,1.5-1.849,0-2.206-1.5-5.173-1.5-3.029,0-3.247,1.5-5.173,1.5-1.849,0-2.206-1.5-5.173-1.5C4.154,11.5,3.936,13,2.01,13v2.992c2.952,0,3.371-1.5,5.2-1.5,1.849,0,2.206,1.5,5.173,1.5,3.029,0,3.247-1.5,5.173-1.5,1.849,0,2.206,1.5,5.173,1.5,3.029,0,3.247-1.5,5.173-1.5,1.849,0,2.175,1.466,5.158,1.5l-.016-2.962C30.547,12.532,30.532,11.5,27.875,11.5Z" transform="translate(-1.995 1.024)" fill="#fff"/>
+      <path id="Caminho_6" data-name="Caminho 6" d="M33.069,11.975C33.1,5.992,26.42,3,17.534,3,8.664,3,2,5.992,2,11.975v1.5H33.069v-1.5Zm-27.682-1.5C6.676,7.2,12.268,5.992,17.534,5.992c5.142,0,9.212,1.092,11.169,2.977a4.132,4.132,0,0,1,1.01,1.511Z" transform="translate(-2 -3)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
