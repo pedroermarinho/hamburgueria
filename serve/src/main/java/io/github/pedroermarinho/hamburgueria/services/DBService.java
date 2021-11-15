@@ -51,26 +51,27 @@ public class DBService {
         Categoria ctg2 = new Categoria(null, "Bebida");
 
         categoriaRepository.saveAll(Arrays.asList(ctg1,ctg2));
+            
+          
+         Produto produto1 = new Produto(null, "Suco de laranja","....",2.0, ctg2);
+         Produto produto2 = new Produto(null, "Suco de uva","....",2.5, ctg2);
+         Produto produto3 = new Produto(null, "Suco de uva","....",2.2, ctg2);
+         Produto produto4 = new Produto(null, "Suco de uva", "....",2.2,ctg2);
+         Produto produto5 = new Produto(null, "Suco de manga", "....",4.2,ctg2);
+         Produto produto6 = new Produto(null, "Suco de morango","....",2.2, ctg2);
+         Produto produto7 = new Produto(null, "Suco de melancia","....",2.2, ctg2);
+         Produto produto8 = new Produto(null, "Suco de acerola", "....",5.2,ctg2);
+         Produto produto9 = new Produto(null, "Suco de graviola","....",2.2, ctg2);
 
-         Produto produto1 = new Produto(null, "Suco de laranja", ctg2);
-         Produto produto2 = new Produto(null, "Suco de uva", ctg2);
-         Produto produto3 = new Produto(null, "Suco de uva", ctg2);
-         Produto produto4 = new Produto(null, "Suco de uva", ctg2);
-         Produto produto5 = new Produto(null, "Suco de manga", ctg2);
-         Produto produto6 = new Produto(null, "Suco de morango", ctg2);
-         Produto produto7 = new Produto(null, "Suco de melancia", ctg2);
-         Produto produto8 = new Produto(null, "Suco de acerola", ctg2);
-         Produto produto9 = new Produto(null, "Suco de graviola", ctg2);
-
-         Produto produto10 = new Produto(null, "Sanduíches de queijos", ctg1);
-         Produto produto11 = new Produto(null, "Sanduíche de queijo e ovo", ctg1);
-         Produto produto12 = new Produto(null, "Sanduíche de queijo minas", ctg1);
-         Produto produto13 = new Produto(null, "Sanduíche de forno", ctg1);
-         Produto produto14 = new Produto(null, "Sanduíche de mortadela e queijo", ctg1);
-         Produto produto15 = new Produto(null, "Sanduíche vegetariano", ctg1);
-         Produto produto16 = new Produto(null, "Sanduíche salada de ovo", ctg1);
-         Produto produto17 = new Produto(null, "Sanduíche mexicano", ctg1);
-         Produto produto18 = new Produto(null, "Sanduíche de frango", ctg1);
+         Produto produto10 = new Produto(null, "Sanduíches de queijos","....",20.2, ctg1);
+         Produto produto11 = new Produto(null, "Sanduíche de queijo e ovo","....",21.2, ctg1);
+         Produto produto12 = new Produto(null, "Sanduíche de queijo minas", "....",22.2,ctg1);
+         Produto produto13 = new Produto(null, "Sanduíche de forno","....",23.2, ctg1);
+         Produto produto14 = new Produto(null, "Sanduíche de mortadela e queijo", "....",2.2,ctg1);
+         Produto produto15 = new Produto(null, "Sanduíche vegetariano","....",24.2, ctg1);
+         Produto produto16 = new Produto(null, "Sanduíche salada de ovo","....",25.2, ctg1);
+         Produto produto17 = new Produto(null, "Sanduíche mexicano", "....",26.2,ctg1);
+         Produto produto18 = new Produto(null, "Sanduíche de frango", "....",27.2,ctg1);
 
 
 
@@ -114,8 +115,29 @@ public class DBService {
          user2.addPerfil(Perfil.ADMIN);
 
 
-        Carrinho carrinho = new Carrinho(null, produto1, user1);
-        user1.setCarrinho(carrinho);
+        Carrinho carrinh1 = new Carrinho(null, produto1, user1);
+        Carrinho carrinh2 = new Carrinho(null, produto2, user2);
+        Carrinho carrinh3 = new Carrinho(null, produto1, user2);
+        Carrinho carrinh4 = new Carrinho(null, produto4, user3);
+        Carrinho carrinh5 = new Carrinho(null, produto5, user4);
+        Carrinho carrinh6 = new Carrinho(null, produto6, user5);
+        Carrinho carrinh7 = new Carrinho(null, produto7, user6);
+        Carrinho carrinh8 = new Carrinho(null, produto8, user7);
+        Carrinho carrinh9 = new Carrinho(null, produto9, user8);
+        Carrinho carrinh10 = new Carrinho(null, produto10, user9);
+
+
+        user1.setCarrinho(carrinh1);
+        user2.setCarrinho(carrinh2);
+        user2.setCarrinho(carrinh3);
+        user3.setCarrinho(carrinh4);
+        user4.setCarrinho(carrinh5);
+        user5.setCarrinho(carrinh6);
+        user6.setCarrinho(carrinh7);
+        user7.setCarrinho(carrinh8);
+        user8.setCarrinho(carrinh9);
+        user9.setCarrinho(carrinh10);
+        
 
      
 
@@ -141,7 +163,7 @@ public class DBService {
         user15
         ));
 
-        carrinhoRepository.saveAll(Arrays.asList(carrinho));
+        carrinhoRepository.saveAll(Arrays.asList(carrinh1,carrinh2,carrinh3,carrinh4,carrinh5,carrinh6,carrinh7,carrinh8,carrinh9,carrinh10));
 
     }
 }
